@@ -1,0 +1,102 @@
+task_id,task_type,gene,scoring,question,answer_options,ground_truth,evidence
+T01,direction_prior,AR,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how AR mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,higher_in_CRPC,log2FC=2.10; FDR=0.00028
+T02,direction_prior,EZH2,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how EZH2 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,higher_in_CRPC,log2FC=2.05; FDR=7.5e-09
+T03,direction_prior,AURKA,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how AURKA mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,higher_in_CRPC,log2FC=1.93; FDR=1.4e-07
+T04,direction_prior,KLK3,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how KLK3 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,lower_in_CRPC,log2FC=-1.83; FDR=7.6e-08
+T05,direction_prior,FOLH1,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how FOLH1 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,lower_in_CRPC,log2FC=-1.55; FDR=0.012
+T06,direction_prior,SSTR1,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how SSTR1 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,lower_in_CRPC,log2FC=-1.18; FDR=0.047
+T07,direction_prior,SSTR2,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how SSTR2 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,no_significant_difference,log2FC=0.33; FDR=0.25
+T08,direction_prior,SST,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how SST mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,no_significant_difference,log2FC=0.46; FDR=0.31
+T09,direction_prior,TFF3,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how TFF3 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,lower_in_CRPC,log2FC=-2.18; FDR=0.00052
+T10,direction_prior,ESR1,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how ESR1 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,lower_in_CRPC,log2FC=-4.20; FDR=1.9e-21
+T11,direction_prior,SRD5A2,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how SRD5A2 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,lower_in_CRPC,log2FC=-5.00; FDR=5.2e-27
+T12,direction_prior,NR3C1,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+Without access to the data, predict how NR3C1 mRNA in metastatic CRPC compares with localized prostate cancer in this dataset.",higher_in_CRPC|lower_in_CRPC|no_significant_difference,lower_in_CRPC,log2FC=-0.66; FDR=0.039
+T13,composition,PAGE4,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+PAGE4 is lower in CRPC than in localized tumors (difference in mean log2 ratio -6.84, FDR 2.1e-35). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,composition_or_handling,max rho=0.63 (stroma)
+T14,composition,FCER1A,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+FCER1A is lower in CRPC than in localized tumors (difference in mean log2 ratio -4.46, FDR 1.0e-32). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,composition_or_handling,max rho=0.58 (mast_cell)
+T15,composition,SRD5A2,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+SRD5A2 is lower in CRPC than in localized tumors (difference in mean log2 ratio -5.00, FDR 5.2e-27). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,composition_or_handling,max rho=0.60 (stroma)
+T16,composition,PCP4,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+PCP4 is lower in CRPC than in localized tumors (difference in mean log2 ratio -4.81, FDR 9.3e-27). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,composition_or_handling,max rho=0.82 (stroma)
+T17,composition,ASB5,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+ASB5 is lower in CRPC than in localized tumors (difference in mean log2 ratio -6.22, FDR 1.6e-25). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,composition_or_handling,max rho=0.69 (stroma)
+T18,composition,ACTBL2,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+ACTBL2 is lower in CRPC than in localized tumors (difference in mean log2 ratio -3.23, FDR 3.4e-25). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,composition_or_handling,max rho=0.86 (stroma)
+T19,composition,CD38,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+CD38 is lower in CRPC than in localized tumors (difference in mean log2 ratio -5.66, FDR 3.8e-22). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,tumor_intrinsic,max rho=0.17 (mast_cell)
+T20,composition,UNC5D,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+UNC5D is lower in CRPC than in localized tumors (difference in mean log2 ratio -4.08, FDR 6.3e-19). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,tumor_intrinsic,max rho=-0.08 (early_response)
+T21,composition,DPP4,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+DPP4 is lower in CRPC than in localized tumors (difference in mean log2 ratio -4.78, FDR 8.8e-18). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,tumor_intrinsic,max rho=0.16 (stroma)
+T22,composition,CHP2,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+CHP2 is lower in CRPC than in localized tumors (difference in mean log2 ratio -3.67, FDR 3.5e-17). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,tumor_intrinsic,max rho=0.29 (stroma)
+T23,composition,ATP8B4,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+ATP8B4 is lower in CRPC than in localized tumors (difference in mean log2 ratio -3.80, FDR 1.2e-16). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,tumor_intrinsic,max rho=0.18 (mast_cell)
+T24,composition,SLC22A4,auto,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+SLC22A4 is lower in CRPC than in localized tumors (difference in mean log2 ratio -2.92, FDR 2.7e-16). Is the main explanation more likely a change within the cancer cells (tumor_intrinsic) or a difference in non-cancer cell content or tissue handling between surgical and autopsy samples (composition_or_handling)?",tumor_intrinsic|composition_or_handling,tumor_intrinsic,max rho=0.14 (early_response)
+T25,arsi_exposure,AR,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how AR mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,higher_after_ARSI,beta=1.22; p=2.7e-05
+T26,arsi_exposure,SSTR1,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how SSTR1 mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,no_significant_difference,beta=-0.34; p=0.077
+T27,arsi_exposure,EZH2,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how EZH2 mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,no_significant_difference,beta=-0.17; p=0.14
+T28,arsi_exposure,DPP4,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how DPP4 mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,lower_after_ARSI,beta=-1.01; p=1.1e-05
+T29,arsi_exposure,ST6GALNAC1,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how ST6GALNAC1 mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,lower_after_ARSI,beta=-0.74; p=2.4e-05
+T30,arsi_exposure,TRPM8,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how TRPM8 mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,lower_after_ARSI,beta=-1.15; p=5e-05
+T31,arsi_exposure,CXCL11,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how CXCL11 mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,no_significant_difference,beta=0.00; p=0.99
+T32,arsi_exposure,GHR,auto,"SU2C/PCF 2019 (Abida et al., PNAS 2019): RNA-seq of metastatic CRPC biopsies (bone, lymph node, liver, other). Comparison of patients previously or currently treated with abiraterone and/or enzalutamide versus ARSI-naive patients, adjusted for biopsy site.
+
+Without access to the data, predict how GHR mRNA in ARSI-exposed tumors compares with ARSI-naive tumors.",higher_after_ARSI|lower_after_ARSI|no_significant_difference,no_significant_difference,beta=0.00; p=0.98
+T33,open,FOSB,expert,"GSE35988 (Grasso et al., Nature 2012): Agilent two-color arrays; localized prostate cancers from radical prostatectomy and metastatic castration-resistant prostate cancers (CRPC) collected at rapid autopsy.
+
+FOSB, FOS and EGR1 are among the most strongly decreased genes in CRPC compared with localized tumors. What is the most likely explanation, and how would you check it in this dataset?",,2 = identifies immediate-early gene induction from surgical warm ischemia / handling in prostatectomy samples (vs autopsy) and proposes checking co-variation with an IEG score or tissue-handling metadata; 1 = gives a plausible biological or composition argument without the handling artifact; 0 = treats it as a resistance driver.,
+T34,open,SSTR1,expert,"Which clinically available drugs engage somatostatin receptor 1 (SSTR1), and how selective are they?",,"2 = names pasireotide as the approved analog with meaningful SSTR1 affinity, states that octreotide and lanreotide bind SSTR1 weakly, and notes there is no approved SSTR1-selective agonist; 1 = partly correct; 0 = claims octreotide or lanreotide are SSTR1 agonists or invents a selective drug.",
+T35,open,SSTR1,expert,"SSTR1 mRNA is lower in ARSI-resistant prostate cancer. Propose the single most informative first experiment to test whether loss of SSTR1 contributes causally to enzalutamide resistance, including controls and the expected result.",,"2 = isogenic gain- and loss-of-function in an ARSI-sensitive and a matched resistant model, enzalutamide dose response as readout, rescue or ligand-dependence control, falsifiable prediction; 1 = reasonable but missing controls or causal logic; 0 = correlative only or infeasible.",

@@ -1,0 +1,6 @@
+step,n
+GPL6480 probes,41000
+with gene symbol,30936
+missing in <=20% of samples,26743
+non-constant,26743
+genes (most variable probe per gene),17237

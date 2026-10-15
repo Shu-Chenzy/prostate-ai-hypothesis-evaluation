@@ -1,0 +1,11 @@
+# Raw and cached downloads are re-created by the notebook (see data/README.md)
+data/*
+!data/README.md
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+.venv/
+.DS_Store
+Thumbs.db
