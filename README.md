@@ -50,15 +50,32 @@ Each answer comes with a stated confidence, so the evaluation measures calibrati
 
 ## Evaluation
 
-Scored in the last section of the notebook; per-question results go to `evaluation/scoring.csv`.
-
-**Status:** the questions, data-derived answers and rubrics are final. Model results will be added here after the first run.
-
+Scored in the last section of the notebook; per-question results are in [evaluation/scoring.csv](evaluation/scoring.csv).
 - **Closed questions:** exact match against the data-derived label. Reported as accuracy per task type, plus the Brier score for confidence.
 - **Open questions:** scored 0-2 by me against the rubric in `tasks.csv`. The rubric was written before I saw any model answers.
 - **Failure cases:** wrong answers given with confidence ≥ 0.7 are listed separately. For each one I note whether the model was wrong or whether the dataset is unusual (for example, FOLH1/PSMA is lower in CRPC in this array dataset, which contradicts most of the literature).
 
-<!-- EVAL_RESULTS -->
+### Results: Claude Opus 5.5 (`claude-opus-5-5`, effort high, one run, October 2026)
+
+| Task type | n | Accuracy vs data | Mean stated confidence | Brier |
+|---|---|---|---|---|
+| `direction_prior` | 12 | 0.67 | 0.66 | 0.18 |
+| `composition` | 12 | 0.67 | 0.65 | 0.20 |
+| `arsi_exposure` | 8 | 0.75 | 0.53 | 0.20 |
+| **all closed** | 32 | **0.69** (22/32) | 0.62 | 0.19 |
+| `open` (expert, 0-2) | 3 | mean 2.0 | | |
+
+![LLM evaluation](results/figures/05_llm_evaluation.png)
+
+What the errors look like:
+
+- **It uses effect size as evidence of artifact.** It caught all 6 composition/handling artifacts but called 4 of 6 tumor-intrinsic genes artifacts too (UNC5D, CHP2, ATP8B4, CD38), mainly because the fold change was large. A model helping triage hits would discard real candidates this way.
+- **It rarely predicts "no difference."** Across the 20 three-option questions it answered `no_significant_difference` twice; the data say 6. SSTR2, SST, EZH2 (after ARSI) and GHR were all predicted to change and did not.
+- **Confidence is usable.** All 5 answers given with confidence above 0.8 were correct. The only high-confidence error was FOLH1/PSMA (0.70), where I judge the dataset, not the model, to be unusual. For CD38 I think the model's argument (benign luminal epithelium, which my scores do not model) is defensible, so that label is disputed rather than a clear model error.
+- **Open questions were strong.** It identified the surgical-ischemia artifact behind FOS/FOSB/EGR1 and proposed the same check I used. It got SSTR1 pharmacology right (pasireotide yes, octreotide/lanreotide negligible, no selective agonist approved). It designed a sound isogenic experiment, though it left out a ligand arm: SSTR1 signaling needs somatostatin or an analog, which culture media may not supply.
+- **Over-refusal.** 3 of 35 benign questions (DPP4 after ARSI, SSTR1 drugs, the SSTR1 experiment) were declined by the safety classifier and answered by the fallback model, Claude Opus 5. For a working biologist, these are false positives worth reporting.
+
+My adjudication of every error is in the `expert_note` column of `scoring.csv`.
 
 ## Findings
 
@@ -66,6 +83,8 @@ Scored in the last section of the notebook; per-question results go to `evaluati
 - **After filtering, the biology is coherent.** Retained upregulated hits are enriched for E2F targets and G2-M checkpoint; downregulated hits for Androgen Response. AR, EZH2 and AURKA rise in CRPC as expected.
 - **Six candidates replicate in ARSI-exposed tumors** (FDR < 0.10): DPP4, ST6GALNAC1, TRPM8, SNTG2, TSPAN11, AGBL2, all lower after ARSI exposure. TRPM8 and DPP4 are androgen-regulated, so the most reproducible signal is loss of AR output under ARSI pressure. The AR positive control behaves as expected (higher after ARSI, p = 3e-5).
 - **SSTR1 is consistent with my bench result but not conclusive on public data alone.** Lower in CRPC (log2FC -1.18, FDR 0.047), not driven by composition (rho 0.01). Lower in ARSI-exposed mCRPC (unadjusted p = 0.013; site-adjusted beta -0.34, p = 0.077), with the effect concentrated in lymph node and bone biopsies. SSTR1 correlates with AR activity (rho 0.19, p = 0.002), consistent with it sitting downstream of AR signaling.
+
+- **Claude agrees with the data 69% of the time without seeing it,** and its stated confidence tracks its accuracy. Its main bias is to read large effects as artifacts and to predict changes where there are none. Both matter for hit triage, and both would be caught by checking against the data, as done here.
 
 ![SSTR1](results/figures/04_sstr1.png)
 
@@ -76,7 +95,7 @@ Scored in the last section of the notebook; per-question results go to `evaluati
 - Welch's t-test is simple and transparent; limma would be the formal choice and could move borderline genes such as SSTR1.
 - In SU2C, ARSI exposure is not the same as ARSI resistance, and low-expressed genes have limited power in FPKM data.
 - mRNA is not protein. For SSTR1, the quantity that matters for a ligand-based therapy is surface receptor protein.
-- The evaluation is small (35 questions, one run per model). It is meant to find failure modes, not to produce a benchmark score.
+- The evaluation is small (35 questions, one run of one model), and 3 answers came from the fallback model. It is meant to find failure modes, not to produce a benchmark score.
 
 ## Reproduce
 
