@@ -1,6 +1,6 @@
-# Prostate cancer ARSI resistance: candidate discovery and an LLM reasoning check
+# ARSI resistance in Prostate cancer: candidate discovery and an LLM reasoning check
 
-Shu Chen, Postdoctoral Scholar, UCSF (Eric Small lab)
+Shu Chen, Postdoctoral Scholar, UCSF 
 
 I study why prostate cancer stops responding to androgen receptor signaling inhibitors (ARSIs) such as enzalutamide and abiraterone. In the lab I found that **SSTR1** (somatostatin receptor 1) is downregulated in ARSI-resistant prostate cancer, and I am working on SSTR1 as a therapeutic target ([AACR abstract B010, *Cancer Res* 2026](https://scholar.google.com/citations?hl=en&user=WkITc2YAAAAJ)). This repository checks that finding against public patient data, and then uses the same data to test where a language model's biological reasoning holds up and where it fails.
 
