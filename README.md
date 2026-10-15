@@ -2,7 +2,7 @@
 
 Shu Chen, Postdoctoral Scholar, UCSF 
 
-I study why prostate cancer stops responding to androgen receptor signaling inhibitors (ARSIs) such as enzalutamide. In the lab I found that **SSTR1** (somatostatin receptor 1) is downregulated in ARSI-resistant prostate cancer post ARSI treatment, and I am working on SSTR1 as an actionable therapeutic target ([AACR abstract B010, *Cancer Res* 2026](https://scholar.google.com/citations?hl=en&user=WkITc2YAAAAJ)). This repository checks that finding against public patient data, and then uses the same data to test where a language model's biological reasoning holds up and where it fails.
+I study why prostate cancer stops responding to androgen receptor signaling inhibitors (ARSIs) such as enzalutamide. ARSIs are among the standard-of-care treatments for patients who have progressed from localized prostate cancer to Castration-resistant prostate cancer (CRPC). In the lab I found that **SSTR1** (somatostatin receptor 1) is downregulated in CRPC post ARSI treatment, and I am working on SSTR1 as an actionable therapeutic target ([AACR abstract B010, *Cancer Res* 2026](https://scholar.google.com/citations?hl=en&user=WkITc2YAAAAJ)). This repository checks that finding against public patient data, and then uses the same data to test where a language model's biological reasoning holds up and where it fails.
 
 ![Volcano plot with composition flag](results/figures/02_volcano_composition.png)
 
