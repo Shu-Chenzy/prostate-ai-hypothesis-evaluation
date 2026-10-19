@@ -58,11 +58,18 @@ I converted data-derived results from the analysis into 35 questions and sent th
 | CRPC direction | 12 | GSE35988 differential-expression result |
 | Composition/handling | 12 | marker-score flag from the analysis |
 | ARSI exposure | 8 | SU2C site-adjusted result |
-| Open questions | 3 | prespecified 0–2 expert rubric |
+| Open questions | 3 | prespecified 0–2 author rubric |
 
-Closed questions are scored by exact match; open questions are scored manually against the rubric written in [`evaluation/tasks.csv`](evaluation/tasks.csv). Confidence is recorded for calibration analysis.
+Closed questions are scored by exact match against a data-derived reference label (`reference_label`). These labels come from the analysis, not from independent biological ground truth; the composition labels in particular rest on the marker-score heuristic. Open questions were manually scored by the repository author, a prostate cancer experimental biologist, against the rubric in [`evaluation/tasks.csv`](evaluation/tasks.csv). Confidence is recorded for calibration analysis.
 
-For the requested Claude Opus 5.5 run, 22/32 closed answers matched the data-derived label (69%). The main errors were over-calling large expression changes as composition effects and predicting a change when the data showed no significant difference. Three prompts were served by a fallback model after refusals and are identified in [`evaluation/scoring.csv`](evaluation/scoring.csv).
+Claude Opus 5.5 was requested for every prompt. It answered 32 of 35 itself; the other three were declined and served by Claude Opus 5 through the API's fallback. The two are reported separately:
+
+| Served by | Closed questions correct | Open questions |
+|---|---:|---|
+| Claude Opus 5.5 (requested model) | 21/31 (68%) | T33 |
+| Claude Opus 5 (fallback after refusal) | 1/1 (T28) | T34, T35 |
+
+The main errors were over-calling large expression changes as composition effects and predicting a change when the data showed no significant difference. Every response records `served_by` in [`evaluation/scoring.csv`](evaluation/scoring.csv).
 
 This is an exploratory check, not a benchmark. A separate repository contains the smaller, blinded multi-model evaluation: [claude-scientific-eval](https://github.com/Shu-Chenzy/claude-scientific-eval).
 
@@ -77,7 +84,7 @@ This is an exploratory check, not a benchmark. A separate repository contains th
 
 ## How this was built
 
-I used Claude Code during development for coding assistance, debugging, task structuring, and editing documentation. I selected the biological questions and datasets, reviewed and revised the analyses against the underlying data, and performed the final domain-expert interpretation and scoring reported here. Raw model outputs are retained unchanged.
+I used Claude Code during development for coding assistance, debugging, task structuring, and editing documentation. I selected the biological questions, reviewed and revised the analyses against the underlying data, and wrote the biological interpretation. Scoring of the open questions was AI-assisted with final author adjudication: Claude drafted initial scores and notes, and I reviewed each response and decided the final scores and notes. Raw model outputs are retained unchanged. A component-by-component breakdown is in [`PROVENANCE.md`](PROVENANCE.md).
 
 ## Reproduce
 
