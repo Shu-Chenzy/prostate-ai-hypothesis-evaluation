@@ -77,7 +77,7 @@ This is an exploratory check, not a benchmark. A separate repository contains th
 
 ## How this was built
 
-I used Claude/Claude Code during development for coding assistance, debugging, task structuring, and editing documentation. I selected the biological questions and datasets, reviewed and revised the analyses against the underlying data, and performed the final domain-expert interpretation and scoring reported here. Raw model outputs are retained unchanged.
+I used Claude Code during development for coding assistance, debugging, task structuring, and editing documentation. I selected the biological questions and datasets, reviewed and revised the analyses against the underlying data, and performed the final domain-expert interpretation and scoring reported here. Raw model outputs are retained unchanged.
 
 ## Reproduce
 
